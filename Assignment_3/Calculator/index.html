@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+   <div class="container">
+    
+      <div class="calculator">
+        <h1>Calculator</h1>
+         <div class="screen">
+            <input type="text" id="result" readonly>
+            <button id="clearScreen" class="colorClear" onclick="clearScreen()">AC</button>
+            <div class="buttons">   
+               <button id="blackBox" onclick="appendInput('9')">9</button>
+               <button id="blackBox" onclick="appendInput('8')">8</button>
+               <button id="blackBox" onclick="appendInput('7')">7</button>
+               <button id="greyBox" onclick="appendInput('+')">+</button>
+               <button id="blackBox" onclick="appendInput('4')">4</button>
+               <button id="blackBox" onclick="appendInput('5')">5</button>
+               <button id="blackBox" onclick="appendInput('6')">6</button>
+               <button id="greyBox" onclick="appendInput('-')">-</button>
+               <button id="blackBox" onclick="appendInput('1')">1</button>
+               <button id="blackBox" onclick="appendInput('2')">2</button>
+               <button id="blackBox" onclick="appendInput('3')">3</button>
+               <button id="greyBox" onclick="appendInput('/')">/</button>
+               <button id="blackBox" onclick="appendInput('.')">.</button>
+               <button id="blackBox" onclick="appendInput('0')">0</button>
+               <button id="blackBox" onclick="solve()">=</button>
+               <button id="greyBox" onclick="appendInput('*')">*</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
